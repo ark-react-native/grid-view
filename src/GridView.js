@@ -89,6 +89,8 @@ class GridView extends Component {
           styles.list,
           this.props.contentContainerStyle,
         ]}
+        renderFooter={this.props.renderFooter}
+        renderHeader={this.props.renderHeader}
         renderRow={(rowData, sectionID, rowID, ...args) => {
           return (
             <View style={[styles.row, this.props.rowStyle]}>
